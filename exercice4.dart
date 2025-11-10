@@ -5,10 +5,17 @@ class Media{
     print("ceci est un media generique.");}}
     class Livre extends Media{
       String auteur;
-      Livre(String titre,this.auteur) : super(titre);
+      Livre(String titre,this.auteur):super(titre);
       @override
       void afficherType(){
         print("Ceci est un livre");}}
+        class Film extends Media{
+          String realisateur;
+          Film(String titre, this.realisateur) : super(titre);
+          @override
+          void afficherType(){
+                print("Ceci est un film.");}}
+
 
 
     
