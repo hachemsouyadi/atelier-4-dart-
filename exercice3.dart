@@ -1,19 +1,20 @@
 class Compte{
   double _solde;
   final String numeroCompte;
-  Compte(this.numeroCompte, [double solde = 0.0]) : _solde = solde;
-  String get soldeFormate => _solde.toString();
+  Compte(this.numeroCompte,[double solde = 0.0]) :_solde=solde;
+  String get soldeFormate=>_solde.toString();
     void depot(double montant){
     if (montant > 0){
-    _solde += montant;}}
+    _solde+=montant;}}
     void retrait(double montant){
-    if (montant > 0 && montant <= _solde){
-      _solde -= montant;}}
+    if (montant > 0 && montant<=_solde){
+    _solde-=montant;}}
     void afficher(){
     print("Compte : $numeroCompte");
-    print("Solde : $soldeFormate");}
+    print("Solde : $soldeFormate");}}
+    void main(){
+  var compte=Compte("12345", 100.0);
+  compte.depot(50);
+  compte.retrait(30);
+  compte.afficher();}
 
-
-
-
-}
