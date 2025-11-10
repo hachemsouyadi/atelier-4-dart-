@@ -5,7 +5,11 @@ class Point{
   void move(double dx, double dy){
     _x = _x + dx;
     _y = _y + dy;
+  }
+    void display(){
+    print("$_x,$_y");
   }}
+
 
 
 
