@@ -6,8 +6,12 @@ class Compte{
     void depot(double montant){
     if (montant > 0){
     _solde += montant;
-    }
-  }
+    }}
+    void retrait(double montant){
+    if (montant > 0 && montant <= _solde){
+      _solde -= montant;
+    }}
+
 
 
 }
