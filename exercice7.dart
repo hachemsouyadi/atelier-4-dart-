@@ -6,3 +6,10 @@ class Tache{
 }
 
 }
+void main(){
+  var t1=Tache("t1");
+  var t2=Tache("t2");
+  var t3=Tache("t3");
+  print(Tache.nombreTotal);
+}
+
